@@ -1,0 +1,46 @@
+<html>
+<head>
+    <style>
+        body{
+            text-align: center;
+        }
+        .qwe {
+            position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+        }
+        .www{
+            font-size: 20px;
+            font-weight: bolder;
+        }
+</style>
+<script>
+    var cats = ["Здравствуйте! Спасибо за выбор aTech nutrition. ", "Добрый день! Спасибо за выбор aTech nutrition. ", "Доброго дня! Спасибо за выбор aTech nutrition. ", "Доброго времени суток! Спасибо за выбор aTech nutrition. "];
+var dogs = ["Мы очень рады, что вы оценили наш продукт и оставили позитивный отзыв. ", "Благодорим за высокую оценку продукта. ", "Благодорим Вас за выбор нашего продукта и позитивный отзыв. ", "Благодарим за доверие к нашему бренду. ", "Спасибо, что нашли время для отзыва на наш продукт. "];
+    var bird = ["Наша миссия заботиться о вас и вашем здоровье. ", "Наша цель помогать людям быть здоровыми. "];
+    var aaa = ["С заботой, aTech nutrition.", "Ваша команда aTech nutrition.", "Всегда на связи команда aTech nutrition."];
+    var bbb = ["Попробуйте наш че-то там. Аритикул 34985897345", "Купи еще это - 43534545", "Заказал протеин? Купи новые трусы"];
+var re = "";
+    for(var x=0;x<1;x++){
+ var randomIndex2 = Math.floor(Math.random() * 4);
+var randomIndex = Math.floor(Math.random() * 5);
+        var randomIndex3 = Math.floor(Math.random() * 2);
+        var randomIndex4 = Math.floor(Math.random() * 3);
+        var randomIndex5 = Math.floor(Math.random() * 3);
+        re+=(cats[randomIndex2]+dogs[randomIndex]+bird[randomIndex3]+aaa[randomIndex4]+bbb[randomIndex5]) +"<br \/>";
+}    
+</script>
+
+</head>
+<body>
+    <div class="qwe">
+<p class="www">Генератор ответов aTech nutrition</p>
+    <p id="demo">1</p>
+        </div>
+</body>
+<script>
+document.getElementById("demo").innerHTML = re;
+</script>
+</html>
